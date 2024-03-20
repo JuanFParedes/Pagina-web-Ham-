@@ -1,7 +1,7 @@
 @import url(variables.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    padding: 0;
+    padding:10px;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -10,6 +10,13 @@ body{
     width: 100%;
     background: var(--color-ternary);
     overflow-y: scroll;
+}
+.Pag2{
+    background-color:whitesmoke;
+}
+.ButtonPag2{
+    margin: 0 80px;
+    background: rgb(163, 101, 59);
 }
 /* **************************** */
 .menu{
@@ -37,7 +44,7 @@ body{
     color: var(--color-primary);
 }
 .open-menu{
-    top: 20px;
+    top: 25px;
     right: 20px;
     display: none;
     position: absolute;
@@ -45,7 +52,12 @@ body{
     width: 30px;
     height: 30px;
     font-size: 20px;
-    border-radius: 10%;
+    border-radius: 15%;
+}
+.bx{
+    display: flex;
+    justify-content: center;
+    padding-top: 14%;
 }
 .close-menu{
     top: 20px;
@@ -117,7 +129,7 @@ main section .text button{
     color: var(--color-secundary);
     background: var(--color-primary);
     border: none;
-    border-radius: 1px;
+    border-radius: 10px;
     cursor: pointer;
     transition: .5s ease;
 }
@@ -191,7 +203,7 @@ main section .image img{
     color: var(--color-secundary);
     background: var(--color-primary);
     border: none;
-    border-radius: 1px;
+    border-radius: 10px;
     cursor: pointer;
     transition: .5s ease;
 }
@@ -235,11 +247,11 @@ main section .image img{
     line-height: 27px;
 }
 #Menu section .menu_image{
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: 30px;
+    grid-gap: 80px;
 }
 #Menu section .menu_image .menu_box{
     width: 100%;
@@ -249,6 +261,7 @@ main section .image img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 15%;
 }
 #Menu section .menu_image .menu_box img{
     width: 60%;
@@ -299,7 +312,7 @@ main section .image img{
     line-height: 27px;
 }
 #Service section .service_items{
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -357,7 +370,7 @@ main section .image img{
     color: var(--color-secundary);
     background: var(--color-primary);
     border: none;
-    border-radius: 1px;
+    border-radius: 10px;
 }
 #Learn section button:hover{
     scale: 1.1;
@@ -385,6 +398,7 @@ main section .image img{
     list-style: none;
     justify-content: center;
 }
+
 #Contact section .Contact_box ul{
     list-style: none;
 }
@@ -397,6 +411,7 @@ main section .image img{
     text-decoration-color: var(--color-primary);
     font-weight: normal;
     margin-bottom: 10px;
+    
 }
 #Contact section .Contact_box ul li{
     transition: .5s ease;
@@ -428,6 +443,7 @@ main section .image img{
     align-items: center;
     color: var(--color-other);
     border-radius: 50%;
+    
 }
 #Contact section .Contact_box ul li a{
     color: var(--color-secundary);
